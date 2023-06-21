@@ -3,4 +3,6 @@ body {
   color: #fff;
   background-image: url("https://images.unsplash.com/photo-1583795484071-3c453e3a7c71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=100");
   background-position-y: -400px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
 }
