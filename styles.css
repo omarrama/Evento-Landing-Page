@@ -4,10 +4,11 @@ body {
   font-family: "Lato", sans-serif;
   color: #fff;
   background-image: url("https://images.unsplash.com/photo-1583795484071-3c453e3a7c71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=100");
-  background-position-y: -350px;
-  background-position-x: -200px;
+  background-position: center;
+  background-position-x: -215px;
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
+  background-repeat: no-repeat;
 }
 
 @keyframes fade-in {
@@ -50,10 +51,90 @@ body {
 
 .link {
   text-decoration: none;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255, 255, 255, 0.75);
   transition: color 300ms;
 }
 
 .link:hover {
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
+}
+
+/* MAIN */
+
+.main {
+  animation: fade-in .5s .1s backwards;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.heading {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 0.9;
+}
+
+.text {
+  font-size: 18px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.75;
+  line-height: 1.5;
+}
+
+.text--bold {
+  font-weight: bold;
+}
+
+.form {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+/* 
+font-size of input and button need to be the same for them to be vertically aligned.
+*/
+
+.input {
+  font: inherit;
+  width: 400px;
+  height: 60px;
+  padding: 0;
+  padding-left: 20px;
+  opacity: .75;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  transition: opacity 600ms;
+}
+
+.input:focus, .input:hover {
+  opacity: 1;
+}
+
+input::placeholder {
+  color: black;
+}
+
+.btn {
+  font: inherit;
+  margin-left: 7px;
+  height: 60px;
+  width: 150px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background-color: rgba(0, 0, 0, 1);
+  transition: background-color 600ms;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  background-color: rgb(22, 21, 21);
 }
